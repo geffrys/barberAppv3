@@ -1,0 +1,51 @@
+.contenedor-lista{
+    list-style: none;
+}
+.lista .lista-a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+}
+
+.contenedor-lista{
+    position: absolute;
+    min-width: 140px;
+}
+
+.submenu{
+    position: absolute;
+
+    /* border: 1px dotted black; */
+    margin-top: -10px;
+    margin-left: 10px;
+    height: 220px;
+    width: 200px;
+    display: none;
+    background-color: rgb(29, 28, 28);
+    box-shadow: 0 0 15px 10px;
+    border-radius: 20px;
+}
+#btnmenu:hover{
+    cursor: pointer;
+}
+#btnmenu{
+    width: 30px;
+    padding: 10px;
+}
+
+
+.lista-a{
+    text-align: center;
+    margin-left: -10px;
+}
+.lista{
+    margin-top: 10px;
+}
+.lista:hover .lista-a{
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+}
+
+

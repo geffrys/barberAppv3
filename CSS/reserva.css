@@ -1,0 +1,30 @@
+.contenido{
+    padding: 0;
+    width: 800px;
+    height: 900px;
+    border-radius: 80px;
+    background-color: gray;
+    opacity: 0.8;
+    box-shadow: 0 0 15px 10px;
+
+}
+.contenido:hover{
+    opacity: 0.85;
+}
+body{
+    background-image: url(../Assets/fondo/posiblefondo.jpg);
+}
+/* icono de navbar */
+.img-ico{
+    width: 50px;
+}
+.navbar-brand{
+    padding-left: 50px;
+}
+
+.navbar{
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    border-top: px;
+}
+

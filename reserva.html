@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Reserva</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.0.2 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./CSS/reserva.css">
+  <link rel="shortcut icon" href="./Assets/Logo/LogoOff.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./CSS/menuDesplegable.css">
+</head>
+
+<body>
+  <!-- contenedor principal -->
+  <div class="m-0 vh-100 row justify-content-center align-items-center">
+    <br><br><br><br><br><br>
+    <!-- Contenedor con la forma, aqui iran todos los elementos -->
+    <!-- p-5 se le quito -->
+    <div class="col-aut  text-center contenido">
+
+
+      <!-- Barra de navegacuib -->
+      <nav class="navbar navbar-expand-sm navbar-dark " style="background-color: #444447; padding-left: 60px;">
+        <!-- <a class="col-1 " id="btnmenu"> -->
+        <span class="navbar-toggler-icon col-1" id="btnmenu"></span>
+        <!-- </a> -->
+
+
+
+        <!-- Titulo -->
+        <h1 style=" color: black;" class="col-10">BarberApp</h1>
+        <!-- navbar-brand -->
+        <a class="justify-content-end col-1" href="./mainPageCustomer.html"><img src="./Assets/Logo/LogoOff.png" alt="" class="img-ico"></a>
+      </nav>
+      <div class="submenu" id="sub-menu">
+        <ul class="contenedor-lista">
+          <li class="lista"><a class="lista-a" href="./mainPageCustomer.html">Inicio</a></li>
+          <li class="lista"><a class="lista-a" href="">Quejas Y Ayudas</a></li>
+          <li class="lista"><a class="lista-a" href="">Equipo de trabajo</a></li>
+          <li class="lista"><a class="lista-a" href="">Configuraciones</a></li>
+          <li class="lista"><a class="lista-a" href="./index.html">Cerrar Sesion</a></li>
+        </ul>
+      </div>
+
+      <!-- Contenido -->
+      <div class="container">
+        <div class="contenedorForm">
+          <form action="../resumen.html" method="get">
+            <div class="mb-3">
+              <label for="" class="form-label" style="font-size: 35px;">Selecciona el lugar</label>
+              <select class="form-control" name="lugar" id="lugar">
+                <option value="" selected>Selecciona el lugar</option>
+                <option value="lugar1">Lugar 1</option>
+                <option value="lugar2">Lugar 2</option>
+                <option value="lugar3">Lugar 3</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label" style="font-size: 35px;">Selecciona el barbero</label>
+              <select class="form-control" name="barbero" id="barbero">
+                <option selected value="">Nombre del barbero de preferencia</option>
+                <option value="barbero1">Barbero 1</option>
+                <option value="barbero2">Barbero 2</option>
+                <option value="barbero3">Barbero 3</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <div class="row">
+                <div class="col">
+                  <label for="" class="form-label" style="font-size: 35px;">Seleccion el dia</label>
+                  <select class="form-control" name="dia" id="dias">
+                    <option selected value="">dia</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <label for="" class="form-label" style="font-size: 35px;">Selecciona el mes</label>
+                  <select class="form-control" name="mes" id="mes">
+                    <option selected value="">Mes</option>
+                    <option class="selectorMeses" value="1">Enero</option>
+                    <option class="selectorMeses" value="2">Febrero</option>
+                    <option class="selectorMeses" value="3">Marzo</option>
+                    <option class="selectorMeses" value="4">Abril</option>
+                    <option class="selectorMeses" value="5">Mayo</option>
+                    <option class="selectorMeses" value="6">Junio</option>
+                    <option class="selectorMeses" value="7">Julio</option>
+                    <option class="selectorMeses" value="8">Agosto</option>
+                    <option class="selectorMeses" value="9">Septiembre</option>
+                    <option class="selectorMeses" value="10">Octubre</option>
+                    <option class="selectorMeses" value="11">Noviembre</option>
+                    <option class="selectorMeses" value="12">Diciembre</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label" style="font-size: 35px;">Selecciona hora</label>
+              <select multiple class="form-select" name="hora" id="hora">
+                <option value="8">8 AM</option>
+                <option value="9">9 AM</option>
+                <option value="10">10 AM</option>
+                <option value="11">11 AM</option>
+                <option value="12">12 M</option>
+                <option value="13">1 PM</option>
+                <option value="14">2 PM</option>
+                <option value="15">3 PM</option>
+                <option value="16">4 PM</option>
+                <option value="17">5 PM</option>
+                <option value="18">6 PM</option>
+              </select>
+            </div>
+
+
+            <!-- selectores de metodo de pago -->
+            <div class="mb-3">
+              <label for="" class="form-label metodos" style="font-size: 35px;">Selecciona el metodo de pago</label>
+              <div class="row metodoPago">
+                <div class="col">
+                  <label class="custom-control custom-radio">
+                    <input type="radio" name="pse" id="pse" value="" class="custom-control-input">
+                    <span class="custom-control-indicator" style="font-size: 20px;"><img src="./Assets/Images/pse.png" width="100px" alt=""></span>
+                    <span class="custom-control-description"></span>
+                  </label>
+                </div>
+                <div class="col">
+                  <label class="custom-control custom-radio ">
+                    <input type="radio" name="efectivo" id="efectivo" value="" class="custom-control-input">
+                    <span class="custom-control-indicator" style="font-size: 20px;"><img src="./Assets/Images/9c2038dccbdd356f5ea7be7d633ae8bb-icono-de-billetes-de-dolar.png" width="100px" alt=""></span>
+                    <span class="custom-control-description"></span>
+                  </label>
+                </div>
+              </div>
+              
+            </div>
+            <button type="submit" class="btn btn-dark">Enviar</button>
+          </form>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+  <!-- cdn jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+  </script>
+  <script src="./JS/menuDesplegable.js"></script>
+  <script src="./JS/reserva.js"></script>
+</body>
+
+</html>

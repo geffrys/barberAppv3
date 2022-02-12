@@ -1,0 +1,69 @@
+.contenido{
+    padding: 0;
+    width: 800px;
+    height: 900px;
+    border-radius: 80px;
+    background-color: gray;
+    opacity: 0.8;
+    box-shadow: 0 0 15px 10px;
+
+}
+.contenido:hover{
+    opacity: 0.85;
+}
+body{
+    background-image: url(../Assets/fondo/posiblefondo.jpg);
+}
+/* icono de navbar */
+.img-ico{
+    width: 50px;
+}
+.navbar-brand{
+    padding-left: 50px;
+}
+
+.navbar{
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    border-top: px;
+}
+.contenidoPagina{
+    margin-top: 20px;
+}
+
+.servicios{
+    height: 310px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 5px;
+}
+
+.Contenido-principal{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.checkboxes{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+/* Checkboxes container */
+.checkb{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: left;
+    margin-top: 10px;
+    background-color: darkgray;
+}
+.checkb:hover{
+    background-color: black;
+    color: white;
+}
+#enviar{
+    padding: 15px;
+    font-size: 15px;
+}
+
